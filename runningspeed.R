@@ -1,9 +1,11 @@
-library (RMySQL)
 library (RODBC)
 library (ggplot2)
 library (tidyverse)
+library (scatterplot3d)
+library(rgl)
+library (knitr)
 
-#Regression analysis using R and MySQL Server services
+#Regression analysis using R and data from MySQL Server 
 #Predict whether or not if less or more body weight affects the running speed of female amateur runners, all aged at 25-years-old.
 #Analyze if blood type also has an impact on performance.
 #Predict whether it is the combination of weight and blood type that positively or
@@ -59,9 +61,6 @@ summary(data)
 
 str(data)
 
-#femme_model= lm(data$body_weight+data$blood_type+data$running_speed,
-#                data = data)#linear model
-#have a test data set to avoid bias
 bloodtest<-round(nrow(data)*0.7)
 
 testblood<-nrow(data)-(bloodtest)
