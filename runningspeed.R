@@ -89,7 +89,6 @@ lm_predict
 
 data$blood_type
 
-
 #Shows Body Weight vs Running Speed | Downward Trend -the less body weight, the faster the runner
 femmeplot<-ggplot(data, aes(x=running_speed, y=body_weight))+
   geom_point()+
@@ -109,7 +108,6 @@ femmebplot
 
 print(femmebplot+labs(y="Blood Type", x="Running Speed (mph)",
                       title="The Affect Blood Type Has on Speed"))
-
 
 #3D structure shows correlation of weight, blood type, and running speed
 plot3d(data=data, data$running_speed,data$blood_type,
