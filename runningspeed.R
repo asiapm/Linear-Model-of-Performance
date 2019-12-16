@@ -6,7 +6,7 @@ library(rgl)
 library (knitr)
 
 #Regression analysis using R and data from MySQL database 
-#Predict whether or not if less or more body weight affects the running speed of female Orangutans, all aged at 5-years-old.
+#Predict whether or not if less or more body weight affects the running speed of female Orangutans, all aged at 15-years-old.
 #Analyze if blood type also has an impact on performance. 
 #Predict whether it is the combination of weight and blood type that positively or
 #negatively impacts performance, with the average running speed of female Orangutans being 6.5 miles per hour. For example:
